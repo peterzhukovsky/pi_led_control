@@ -37,22 +37,27 @@ def Blink_total():
     time.sleep(20)
     print "Block 1",
     print datetime.datetime.now()
-    
     Blink(int(iterations),float(speed1), float(speed2))
+    print "End of Block 1"
     time.sleep(60)
+    
     print "Block 2",
     print datetime.datetime.now()
     Blink(int(iterations),float(speed1), float(speed2))
+    print "End of Block 2"
     time.sleep(60)
+    
     print "Block 3",
     print datetime.datetime.now()
     Blink(int(iterations),float(speed1), float(speed2))
+    print "End of Block 3"
+    
     time.sleep(60)
     print "Block 4",
     print datetime.datetime.now()
     Blink(int(iterations),float(speed1), float(speed2))
-    time.sleep(60)
-    
+    print "End of Block 4"
+        
 
 Blink_total()
 #running my_callback and Blink_total in parallel
