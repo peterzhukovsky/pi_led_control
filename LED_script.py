@@ -16,7 +16,6 @@ def my_callback():
     print "BOLD TR acquired!",
     print datetime.datetime.now()
 
-Blink(int(iterations),float(speed1), float(speed2))
 GPIO.add_event_callback(16, my_callback) #add callback
 
 def Blink(numTimes,speed1, speed2):
