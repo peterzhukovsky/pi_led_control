@@ -21,7 +21,6 @@ GPIO.add_event_callback(16, my_callback) #add callback
 
 def Blink(numTimes,speed1, speed2):
     for i in range(0,numTimes):
-        print "Iteration " + str(i+1)
         GPIO.output(7,True)
         time.sleep(speed1)
         GPIO.output(7,False)
@@ -30,7 +29,7 @@ def Blink(numTimes,speed1, speed2):
 
 iterations = 300 #raw_input("Enter total nr of times to blink: ")
 speed1 = 0.01 #raw_input("Enter length of each blink in s: ")
-speed2 = 0.09 #emprirically this results in apprx 10 blinks per second, ie 10Hz
+speed2 = 0.09 #ie 10Hz
 
 #Block Design
 def Blink_total():
